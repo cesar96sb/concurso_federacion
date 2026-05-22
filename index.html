@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia RFFM - Selección</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="rffm.webp" alt="Logo RFFM" class="logo">
+            <h1>Trivia Fútbol Madrid</h1>
+        </header>
+
+        <section id="pantalla-inicio" class="card">
+            <h2>Registro de Participante</h2>
+            
+            <form id="registro-form">
+                <input type="text" id="nombre" placeholder="Tu Nombre Completo" required>
+                <input type="email" id="email" placeholder="Tu Email" required>
+                <input type="tel" id="telefono" placeholder="Teléfono móvil" required>
+                
+                <div class="privacidad-box">
+                    <input type="checkbox" id="acepta-privacidad" required>
+                    <label for="acepta-privacidad">
+                        ⚽ ¡Me apunto! Acepto las condiciones y sé que para llevarme el premio del sorteo tengo que estar registrado en <strong>rffm.play</strong> y seguir el partidazo en redes en <strong>@RFFM_oficial</strong>.
+                    </label>
+                </div>
+
+                <div class="redes-sociales-container">
+                    <p>¡Síguenos para no perder la jugada!</p>
+                    <div class="iconos-redes">
+                        <a href="https://instagram.com/_u/RFFM_oficial" target="_blank" rel="noopener noreferrer" class="red-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/RFFM_oficial" target="_blank" rel="noopener noreferrer" class="red-icon twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@rffm_oficial" target="_blank" rel="noopener noreferrer" class="red-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.rffmplay.es/" target="_blank" rel="noopener noreferrer" class="red-icon rffm-play-btn">
+                            <img src="logo_rffm_play.webp" alt="RFFM Play" class="icono-rffm-custom">
+                        </a>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-principal">Continuar</button>
+            </form> 
+        </section>
+
+        <section id="pantalla-menu" class="card hidden">
+            <h2>Selecciona Categoría</h2>
+            <div class="grid-menu">
+                <button class="btn-menu" onclick="seleccionarCategoria('jugadores')">⚽ Jugadores</button>
+                <button class="btn-menu" onclick="seleccionarCategoria('estadios')">🏟️ Estadios</button>
+                <button class="btn-menu" onclick="seleccionarCategoria('escudos')">🛡️ Escudos</button>
+            </div>
+        </section>
+
+        <section id="pantalla-juego" class="hidden">
+            <div class="stats">
+                <span id="timer">Tiempo: 15s</span>
+                <span id="progreso">1 / 10</span>
+            </div>
+            <div class="pregunta-card">
+                <img src="" id="imagen-pregunta" alt="Cargando...">
+                <h3 id="texto-pregunta"></h3>
+                <div id="opciones" class="grid-opciones"></div>
+            </div>
+        </section>
+
+        <section id="pantalla-resultados" class="card hidden">
+            <h2>Resultado Final</h2>
+            <div class="score-circle"><span id="puntos-finales">0</span>/10</div>
+            <p id="mensaje-final"></p>
+            <div class="recordatorio-final-container">
+                <p class="texto-recordatorio-final">
+                    📝 <strong>RECUERDA:</strong> Para participar en el sorteo de magníficos premios tienes que registrarte en <strong>rffm.play</strong> y seguirnos en las redes sociales.
+                </p>
+
+                <div class="iconos-redes-final-horizontal">
+                    <a href="https://instagram.com/_u/RFFM_oficial" target="_blank" rel="noopener noreferrer" class="red-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/RFFM_oficial" target="_blank" rel="noopener noreferrer" class="red-icon twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@rffm_oficial" target="_blank" rel="noopener noreferrer" class="red-icon tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.rffmplay.es/" target="_blank" rel="noopener noreferrer" class="red-icon rffm-play-btn">
+                        <img src="logo_rffm_play.webp" alt="RFFM Play" class="icono-rffm-custom">
+                    </a>
+                </div>
+
+                <p class="texto-aviso-cierre">
+                    Asegúrate de cumplir ambos requisitos antes de cerrar la página para no perder tu oportunidad. 👇
+                </p>
+            </div>
+            <button onclick="location.reload()" class="btn-principal">Volver al Menú</button>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+       (function(){
+          emailjs.init("UEVvejOvGKkEOFYmq"); 
+       })();
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

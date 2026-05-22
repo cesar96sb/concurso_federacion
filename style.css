@@ -1,0 +1,279 @@
+:root {
+    --rojo-rffm: #e20613; /* El rojo de la imagen */
+    --dorado-rffm: #c4a457; /* El dorado del borde del logo */
+    --gris-fondo: #f4f7f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gris-fondo);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h1 { color: var(--rojo-rffm); font-size: 1.5rem; }
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hidden { display: none; }
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.btn-principal {
+    background: var(--rojo-rffm);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.grid-opciones {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.opcion-btn {
+    background: white;
+    border: 2px solid var(--rojo-rffm);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opcion-btn:hover {
+    background: var(--rojo-rffm);
+    color: white;
+}
+
+#imagen-pregunta {
+    width: 100%;       /* Ocupa todo el ancho de la tarjeta */
+    max-height: 250px; /* Limitamos la altura para que no desplace los botones */
+    object-fit: contain; /* La imagen se encoge para caber entera sin cortarse */
+    background-color: #f9f9f9; /* Un fondo gris clarito por si la foto es pequeña */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.score-circle {
+    font-size: 3rem;
+    color: var(--rojo-rffm);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.grid-menu {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-menu {
+    background: white;
+    border: 3px solid var(--rojo-rffm);
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--rojo-rffm);
+}
+
+.btn-menu:hover {
+    background: var(--rojo-rffm);
+    color: white;
+}
+
+.hidden { display: none !important; }
+
+.stats {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos al máximo */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: var(--azul-rffm, #333); /* Usará el azul si existe, si no, gris oscuro */
+}
+
+#timer {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--rojo-rffm); /* El tiempo en rojo para que destaque */
+}
+
+#progreso {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Clase para respuesta correcta (Verde Pastel) */
+.correcta {
+    background-color: #a8e6cf !important; 
+    border-color: #81c784 !important;
+    color: #1b5e20 !important;
+}
+
+/* Clase para respuesta incorrecta (Rojo Pastel) */
+.incorrecta {
+    background-color: #ff8b94 !important;
+    border-color: #e57373 !important;
+    color: #b71c1c !important;
+}
+
+/* Efecto de suavizado para que el color no cambie de golpe */
+.opcion-btn {
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para la sección de privacidad en el formulario */
+.privacidad-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0;
+    text-align: left;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.privacidad-box input {
+    width: auto;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.redes-sociales-container {
+    text-align: center;
+    margin: 15px 0; /* Un margen equilibrado arriba y abajo */
+    width: 100%;    /* Asegura que ocupe el ancho del formulario */
+}
+
+.redes-sociales-container p {
+    font-size: 0.9rem;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.red-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.red-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Colores de marca */
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.twitter {
+    background-color: #000000; /* Color actual de X */
+}
+
+.tiktok {
+    background-color: #010101;
+    border: 1px solid #ee1d52; /* Detalle del efecto TikTok */
+}
+
+.rffm-play-btn {
+    background-color: #ffffff !important; /* Fondo blanco para que resalte el logo */
+    border: 1px solid #e30613; /* Borde rojo corporativo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Corta la imagen en forma de círculo */
+}
+
+/* Ajuste de la imagen interna del logo de RFFM Play */
+.icono-rffm-custom {
+    width: 65%;
+    height: auto;
+    object-fit: contain;
+}
+
+.recordatorio-discreto {
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+.texto-recordatorio-final {
+    font-size: 0.9rem; /* Tamaño discreto, igual que el del checkbox */
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.texto-recordatorio-final a {
+    color: #dc2743; /* Color rojo federación para el enlace */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* LA CLAVE: Esto los obliga a ponerse en fila india horizontal */
+.iconos-redes-final-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Separación horizontal entre los botones */
+    margin-bottom: 15px;
+}
+
+.texto-aviso-cierre {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+}

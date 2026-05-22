@@ -1,0 +1,72 @@
+========================================================================
+GUÍA DE USO E INSTRUCCIONES: TRIVIA INTERACTIVA RFFM
+========================================================================
+
+¿QUÉ ES ESTA PÁGINA?
+------------------------------------------------------------------------
+Es un juego de preguntas y respuestas diseñado especialmente para la Real 
+Federación de Fútbol de Madrid. El objetivo es que los usuarios se diviertan 
+poniendo a prueba sus conocimientos y, a la vez, se registren en la web de 
+RFFM PLAY y sigan a la federación en sus redes sociales para poder entrar 
+en el sorteo de grandes premios.
+
+
+¿QUÉ ELEMENTOS TIENE EL JUEGO? (Estructura)
+------------------------------------------------------------------------
+El juego está dividido en 3 temáticas independientes de 10 preguntas cada una:
+1. Jugadores (Adivinar el nombre del futbolista por su foto).
+2. Estadios (Adivinar el nombre del campo por su foto).
+3. Escudos (Adivinar a qué equipo de Madrid pertenece el escudo).
+
+Para que el juego sea dinámico, tanto el orden en el que salen los temas como 
+la posición de los botones de respuesta cambian por completo y de forma 
+automática en cada partida. Así se evita que los usuarios se copien las 
+respuestas entre ellos.
+
+
+¿CÓMO FUNCIONA? (Paso a paso para el usuario)
+------------------------------------------------------------------------
+1. Registro Obligatorio: 
+   Lo primero que ve el usuario es una pantalla de bienvenida donde tiene 
+   que poner obligatoriamente su Nombre, Email y Teléfono. Sin esto, no 
+   puede empezar a jugar.
+
+2. Elección de Categoría: 
+   Una vez se registra, pasa a un menú principal donde elige qué quiere adivinar: 
+   si Jugadores, Estadios o Escudos.
+
+3. La Partida (A contrarreloj):
+   - Aparece la imagen y la pregunta con 4 opciones debajo.
+   - El usuario tiene un máximo de 15 segundos para responder.
+   - Si acierta, el botón se ilumina en VERDE y se suma un punto.
+   - Si falla, su botón se ilumina en ROJO y el juego le marca en verde 
+     cuál era la respuesta correcta para que lo sepa.
+   - El sistema avanza automáticamente a la siguiente pregunta.
+
+4. Pantalla de Resultados y Recordatorio de Premios:
+   Al contestar las 10 preguntas, el juego muestra la puntuación final. 
+   Si el usuario consigue un 10/10, salta una animación especial con confeti.
+
+   Justo debajo de la puntuación, aparece un texto bien claro que les 
+   RECUERDA que para llevarse los premios es obligatorio cumplir dos pasos:
+   - Registrarse en la plataforma "rffm.play".
+   - Seguir a la federación en las redes sociales.
+
+   Para ponérselo facilísimo, debajo del texto hay 4 botones redondos con los 
+   logos oficiales (RFFM Play, Instagram, X/Twitter y TikTok) que les llevan 
+   directamente a vuestras páginas al pulsar sobre ellos.
+
+5. Cierre y Reinicio:
+   Al pulsar el botón final de "Volver al Menú", la pantalla se borra por 
+   completo y regresa al formulario de inicio. Así, la página queda limpia 
+   y lista para que juegue otra persona diferente desde el mismo dispositivo.
+
+
+¿CÓMO RECIBE LA FEDERACIÓN LOS DATOS?
+------------------------------------------------------------------------
+No os tenéis que preocupar de mirar ninguna base de datos. Cada vez que un 
+usuario llega al final del juego, el sistema os envía de forma automática un 
+correo electrónico a vuestro email con la ficha del jugador: su nombre, 
+teléfono, correo, la categoría a la que ha jugado y los puntos exactos 
+que ha sacado. Así sabréis perfectamente quién se merece entrar en el sorteo.
+========================================================================
